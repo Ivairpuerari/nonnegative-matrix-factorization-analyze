@@ -1,0 +1,28 @@
+NMF,,
+,topic,top_words
+0,0,chronic failure renal diabet trace acute urine hypertension atrial wave
+1,1,feed stool babi retract neonatolog activ bili murmur benign shift
+2,2,valve aortic mitral leaflet ventricular regurgit mildly wall systole doppler
+3,3,newborn nicu sepsi born maternal vaccine prophylactic babi term deliv
+4,4,fracture trauma injury spine fall contrast cervic pelvic hematoma bone
+5,5,vent resp secret wean suction intub tube thick neuro sedat
+6,6,arteri coronari cabg graft postop carotid cardiac stent wire surgery
+7,7,liver bleed contrast pelvic hepat abdomen vein portal abdomen ascit
+8,8,hemorrhage head contrast brain frontal cerebral mass aneurysm seizur artery
+9,9,balance respiratori inspmin mmhg nutrit fluid imagejpg prophylaxis glycem puls
+10,10,tube effusion pleural pneumothorax portable radiology lobe atelectasis interv pneumonia
+RESULT:  48.43% ,,
+LDA,,
+,topic,top_words
+0,0,valve aortic arterial ventricular mitral leaflet coronary cardiac systole wall
+1,1,insulin surgery wound post-op regular dilaudid extreme incision diet intact
+2,2,sepsis baby murmur nicu newborn feed active born week screen
+3,3,respiratory ventilation secretions wean neuro thick skin urine intubated suction
+4,4,acute urine pulse bleed respiratory fluid rhythm renal chronic stool 
+5,5,head fracture hemorrhage contrast neuro arteria radiology evidence mass hematoma
+6,6,effusion pleural tube pulmonary radiology pneumonia lobe interval lower opacities
+7,7, liver contrast fluid abdomen abdominal renal vein bleed hepatic radiology
+8,8, tube drain draining pleural pneumothorax effusion wean radiology respiratory neuro
+9,9, feed active stool respiratory murmur retract cpap benign neonatolog week 
+10,10, respiratory tube acute ventilation fluid intubated failure balanced breath nutritional
+RESULT: 52.99%,,
