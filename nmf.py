@@ -9,13 +9,14 @@ FileWithStopWords = 'C:/Users/Ivaai/Documents/clean/clean_admissionLife.txt'
 
 # 'C:/Users/Ivaai/Documents/clean_admissionDeath.txt'
 
+
 with open(FileWithStopWords, 'r',  encoding='UTF-8') as fr:
     data = [line.replace('\n', '') for line in fr]
 
 print(len(data))
 
-tfidf_vectorizer = TfidfVectorizer(min_df=10, stop_words='english', max_features=20000,
-                                   analyzer='word')
+tfidf_vectorizer = TfidfVectorizer(
+    min_df=0.10, max_df=0.80, max_features=10000)
 
 tfidf = tfidf_vectorizer.fit_transform(data)
 
@@ -26,8 +27,8 @@ print('size %d of terms' % len(tfidf_feature_names))
 
 n_topics = 11
 
-nmf = NMF(n_components=n_topics, random_state=1,
-          alpha=0.1, solver="mu")
+nmf = NMF(n_components=n_topics, random_state=100, max_iter=1000,
+          alpha=0.1)
 
 W = nmf.fit_transform(tfidf)
 
@@ -48,4 +49,4 @@ topic_word = pd.DataFrame.from_dict(dct)
 
 print(topic_word)
 
-topic_word.to_csv('topics_clean.csv')
+topic_word.to_csv('topics_clean_life_opt.csv')
